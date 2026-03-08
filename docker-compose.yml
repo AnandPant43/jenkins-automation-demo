@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  react-app:
+    image: react-static-app
+    build: .
+    container_name: react-static
+    ports:
+      - "3000:80"
+    restart: always
+
+
